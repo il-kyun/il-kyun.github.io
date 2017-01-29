@@ -1,11 +1,3 @@
 ## Welcome to IK diary
 
---- layout: default title: {{ site.name }} ---
-
-<div id="home">
-
-# Blog Posts
-
-*   <span>{{ post.date | date_to_string }}</span> » [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-
-</div>
+You can use the [editor on GitHub](https://github.com/il-kyun/il-kyun.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
