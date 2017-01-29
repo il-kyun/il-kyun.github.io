@@ -24,6 +24,8 @@ tistory를 해볼까? blogger를 해볼까? 하다가 `github pages`를 알고 j
 
 이렇게 1&2 만으로도 페이지 생성이 완료 되고 접속하여 확인 해 볼 수 있다.
 
+`_config.yml`이 설정파일이고 `index.md`가 메인 화면이다.
+
 [pages-github][pages-github]에 매우 잘 정리 되어있다.
 
 단 관리를 위해서 로컬에 jekyll 환경을 구축하고 사용 하는 것을 추천한다.
@@ -46,7 +48,7 @@ tistory를 해볼까? blogger를 해볼까? 하다가 `github pages`를 알고 j
 
 
 ref :
-https://help.github.com/categories/github-pages-basics/ -
+https://help.github.com/categories/github-pages-basics/
 http://yongho1037.tistory.com/599#recentTrackback
 http://jekyll-windows.juthilo.com/
 https://pages.github.com/
