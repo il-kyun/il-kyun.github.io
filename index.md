@@ -1,3 +1,9 @@
-## Welcome to IK diary
+--- layout: default title: {{ site.name }} ---
 
-You can use the [editor on GitHub](https://github.com/il-kyun/il-kyun.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<div id="home">
+
+# Blog Posts
+
+*   <span>2017-01-29</span> » [start-jekyll](https://il-kyun.github.io/main/2017/01/29/start-jekyll.html)
+
+</div>
