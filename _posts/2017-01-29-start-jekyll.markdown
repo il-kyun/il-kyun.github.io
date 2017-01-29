@@ -5,26 +5,53 @@ date:   2017-01-29 19:41:00 +0900
 categories: main
 ---
 
-2013-05-01 프로그래머라는 길에 발을 디뎠다.
-2014년 어느날부터 나만의 기록을 남겨야 겠다는 생각도 하고 조언도 들었지만 선뜻 시작하지 못하고 이런 저런 핑계를 대며 미뤄왔다.
+2013-05-01 시작이었다.
 
-tistory, blogger를 만들긴 했지만 몇번 글을 적지도 않고 잊어 버리곤 했다.
+tistory를 해볼까? blogger를 해볼까? 하다가 `github pages`를 알고 jekyll을 사용하기로 정했다.
 
+이미 많은 분들이 사용하고 계시기 때문에 쉽게 찾을 수 있고 git으로 관리 할 수 있다는 점이 마음에 들었다.
 
+[github-pages-basics][github-pages-basics]를 보면 자세한 설명을 볼 수 있다.
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+간단히 말하면 github repository를 기반으로 간단한 정적 페이지를 호스팅 해준다는 거다.
 
+예를 들어 github 이름이 il-kyun라면 il-kyun.github.io라고 repository name을 만들면 il-kyun.github.io로 연결을 해준다.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+단 repository가 1GB를 넘지 않는 것을 추천하며 bandwidth가 100GB/month로 제한이 된다.
+
+1. userName.github.io로 repository를 생성
+2. Settigns -> GitHub Pages에서 theme을 선택
+
+이렇게 1&2 만으로도 페이지 생성이 완료 되고 접속하여 확인 해 볼 수 있다.
+
+[pages-github][pages-github]에 매우 잘 정리 되어있다.
+
+단 관리를 위해서 로컬에 jekyll 환경을 구축하고 사용 하는 것을 추천한다.
+
+로컬에 구축하기 위해서는 ruby를 설치 해야 한다.
+
+[jekyll-windows][jekyll-windows]를 단계 별로 따라하면 어렵지 않게 할 수 있고 `3.syntax` 부터는 필수는 아니다.
+
+설치 후 패키지를 설치하고
+
+{% highlight command %}
+
+  //instal packages
+  gem install github-pages
+  gem install bundler
+
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+원하는 theme 프로젝트를 다운 받아서 `RubyDevKit` 하위 폴더에 폴더를 만들고 해당 폴더에 git을 add해서 사용하면 된다.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+ref :
+https://help.github.com/categories/github-pages-basics/ -
+http://yongho1037.tistory.com/599#recentTrackback
+http://jekyll-windows.juthilo.com/
+https://pages.github.com/
+
+
+[github-pages-basics]: https://help.github.com/categories/github-pages-basics/
+[pages-github]:   https://pages.github.com/
+[jekyll-windows]: http://jekyll-windows.juthilo.com/
